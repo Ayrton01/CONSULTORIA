@@ -35,5 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                 });
             }
-        });
+        })
+        .catch(error => console.error('Erro ao carregar a seção portfolio:', error));
 });
