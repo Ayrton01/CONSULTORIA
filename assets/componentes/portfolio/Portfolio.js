@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("assets/componentes/Portfolio/portfolio.html")
+    fetch("assets/componentes/portfolio/portfolio.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("portfolio-placeholder").innerHTML = data;
