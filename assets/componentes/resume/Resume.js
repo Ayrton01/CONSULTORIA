@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("componentes/Resume/resume.html")
+    fetch("assets/componentes/Resume/resume.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("resume-placeholder").innerHTML = data;
