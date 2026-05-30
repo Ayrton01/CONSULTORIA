@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('assets/componentes/sobre/sobre.html')
+    fetch('assets/componentes/fundamentos/sobre.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('sobre-placeholder').innerHTML = data;
