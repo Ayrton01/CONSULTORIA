@@ -154,7 +154,7 @@
    */
   const headerElement = document.querySelector('#header');
   if (headerElement && !headerElement.innerHTML.trim()) {
-    fetch('assets/componentes/Hero/header.html')
+    fetch('assets/componentes/hero/header.html')
       .then(response => response.text())
       .then(data => {
         headerElement.innerHTML = data;
@@ -172,7 +172,7 @@
    */
   const heroElement = document.querySelector('#hero');
   if (heroElement && !heroElement.innerHTML.trim()) {
-    fetch('assets/componentes/Hero/hero.html')
+    fetch('assets/componentes/hero/hero.html')
       .then(response => response.text())
       .then(data => {
         heroElement.innerHTML = data;
