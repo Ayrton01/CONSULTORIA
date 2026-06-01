@@ -1,5 +1,5 @@
 function carregarResume() {
-    fetch("assets/componentes/etapa/etapa.html")
+    fetch("assets/componentes/etapas/etapas.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("resume-placeholder").innerHTML = data;

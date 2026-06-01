@@ -170,7 +170,7 @@
   /**
    * Carrega o hero dinamicamente (se estiver vazio)
    */
-  const heroElement = document.querySelector('#hero');
+  const heroElement = document.querySelector('#hero-placeholder');
   if (heroElement && !heroElement.innerHTML.trim()) {
     fetch('assets/componentes/hero/hero.html')
       .then(response => response.text())

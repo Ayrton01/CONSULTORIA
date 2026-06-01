@@ -2,7 +2,7 @@
     // Array com os caminhos dos scripts na exata ordem desejada
     const scripts = [
         "assets/js/fundamentos.js",
-        "assets/js/etapa.js",
+        "assets/js/etapas.js",
         "assets/js/aplicacoes.js",
         "assets/js/contato.js"
     ];
