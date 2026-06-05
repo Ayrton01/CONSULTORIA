@@ -17,7 +17,7 @@
     if (!headerToggleBtn) return;
 
     function headerToggle() {
-      document.querySelector('#header').classList.toggle('header-show');
+      document.querySelector('#menu').classList.toggle('header-show');
       headerToggleBtn.classList.toggle('bi-list');
       headerToggleBtn.classList.toggle('bi-x');
     }
@@ -152,9 +152,9 @@
   /**
    * Carrega o header dinamicamente (se estiver vazio)
    */
-  const headerElement = document.querySelector('#header');
+  const headerElement = document.querySelector('#menu');
   if (headerElement && !headerElement.innerHTML.trim()) {
-    fetch('assets/componentes/hero/header.html')
+    fetch('assets/componentes/inicio/menu.html')
       .then(response => response.text())
       .then(data => {
         headerElement.innerHTML = data;
@@ -168,18 +168,18 @@
   }
 
   /**
-   * Carrega o hero dinamicamente (se estiver vazio)
+   * Carrega o inicio dinamicamente (se estiver vazio)
    */
-  const heroElement = document.querySelector('#hero-placeholder');
-  if (heroElement && !heroElement.innerHTML.trim()) {
-    fetch('assets/componentes/hero/hero.html')
+  const inicioElement = document.querySelector('#inicio-placeholder');
+  if (inicioElement && !inicioElement.innerHTML.trim()) {
+    fetch('assets/componentes/inicio/inicio.html')
       .then(response => response.text())
       .then(data => {
-        heroElement.innerHTML = data;
+        inicioElement.innerHTML = data;
         initTyped();
         aosInit();
       })
-      .catch(error => console.error('Erro ao carregar o hero:', error));
+      .catch(error => console.error('Erro ao carregar o inicio:', error));
   } else {
     initTyped();
   }

@@ -1,72 +1,19 @@
-/* Fonts */
-:root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu", sans-serif;
-  --nav-font: "Nunito", sans-serif;
-}
-
-/* Global Colors */
-:root {
-  --background-color: #1f1f1f;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --accent-color: #ececec;
-  --surface-color: #232323;
-  --contrast-color: #310606;
-}
-
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
-
-/* General */
-body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
-}
-
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-}
-
-/* Global Sections */
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  overflow: clip;
-}
-
-/* Section Titles */
-.section-title {
+/* Section Title — escopado para .contato para não afetar outras seções */
+.contato .section-title {
   text-align: center;
   padding-bottom: 60px;
   position: relative;
 }
 
-.section-title h2 {
+.contato .section-title h2 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
+  color: var(--heading-color);
 }
 
-.section-title h2:before,
-.section-title h2:after {
+.contato .section-title h2:before,
+.contato .section-title h2:after {
   content: "";
   width: 50px;
   height: 2px;
@@ -74,20 +21,22 @@ section,
   display: inline-block;
 }
 
-.section-title h2:before {
+.contato .section-title h2:before {
   margin: 0 15px 10px 0;
 }
 
-.section-title h2:after {
+.contato .section-title h2:after {
   margin: 0 0 10px 15px;
 }
 
-.section-title p {
+.contato .section-title p {
   margin-bottom: 0;
+  color: var(--default-color);
 }
 
 /* Contact Section */
-.contact .info-box {
+
+.contato .info-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 3rem;
@@ -95,28 +44,28 @@ section,
   height: 100%;
 }
 
-.contact .info-box h3 {
+.contato .info-box h3 {
   color: var(--contrast-color);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 @media (max-width: 767.98px) {
-  .contact .info-box h3 {
+  .contato .info-box h3 {
     font-size: 1.75rem;
   }
 }
 
-.contact .info-box p {
+.contato .info-box p {
   opacity: 0.8;
   margin-bottom: 2rem;
 }
 
-.contact .info-box a {
+.contato .info-box a {
   color: var(--contrast-color);
 }
 
-.contact .info-box .social-links {
+.contato .info-box .social-links {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -125,7 +74,7 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--contrast-color), transparent 85%);
 }
 
-.contact .info-box .social-links a {
+.contato .info-box .social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,7 +87,7 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info-box .social-links a:hover {
+.contato .info-box .social-links a:hover {
   background-color: var(--contrast-color);
   color: var(--accent-color);
   transform: translateY(-5px);
@@ -146,22 +95,22 @@ section,
 }
 
 @media (max-width: 992px) {
-  .contact .info-box {
+  .contato .info-box {
     padding: 1.5rem;
   }
 }
 
-.contact .info-item {
+.contato .info-item {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.contact .info-item:last-child {
+.contato .info-item:last-child {
   margin-bottom: 0;
 }
 
-.contact .info-item .icon-box {
+.contato .info-item .icon-box {
   width: 3.5rem;
   height: 3.5rem;
   background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
@@ -173,34 +122,34 @@ section,
   transition: 0.3s;
 }
 
-.contact .info-item .icon-box i {
+.contato .info-item .icon-box i {
   font-size: 1.5rem;
   color: var(--contrast-color);
 }
 
-.contact .info-item:hover .icon-box {
+.contato .info-item:hover .icon-box {
   background-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
 }
 
-.contact .info-item .content h4 {
+.contato .info-item .content h4 {
   color: var(--contrast-color);
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
-.contact .info-item .content p {
+.contato .info-item .content p {
   margin-bottom: 0.25rem;
   font-size: 0.95rem;
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
-.contact .info-item .content p:last-child {
+.contato .info-item .content p:last-child {
   margin-bottom: 0;
 }
 
-.contact .contact-form {
+.contato .contato-form {
   background-color: var(--surface-color);
   padding: 3rem;
   border-radius: 1rem;
@@ -209,23 +158,52 @@ section,
 }
 
 @media (max-width: 992px) {
-  .contact .contact-form {
+  .contato .contato-form {
     padding: 1.5rem;
   }
 }
 
-.contact .contact-form h3 {
+.contato .contato-form h3 {
+  color: var(--heading-color);
   font-size: 2rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-  .contact .contact-form h3 {
+  .contato .contato-form h3 {
     font-size: 1.75rem;
   }
 }
 
-.contact .contact-form p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
-  margin-bottom: 2rem;
+.contato .contato-form p {
+  color: var(--default-color);
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.contato .qr-container {
+  background: #0a120d;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  max-width: 280px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.contato .qr-container img {
+  border-radius: 8px;
+  width: 100%;
+  display: block;
+}
+
+.contato .qr-label {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }

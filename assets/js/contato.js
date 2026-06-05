@@ -9,9 +9,3 @@ function carregarContato() {
       })
       .catch(error => console.error('Erro ao carregar a seção de contato:', error));
 }
-
-if (document.readyState === 'loading') {
-    document.addEventListener("DOMContentLoaded", carregarContato);
-} else {
-    carregarContato();
-}
