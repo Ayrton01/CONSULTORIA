@@ -1,8 +1,8 @@
-function carregarSobre() {
-    fetch('assets/componentes/fundamentos/fundamentos.html')
+function carregarConsultoria() {
+    fetch('assets/componentes/consultoria/consultoria.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('fundamentos-placeholder').innerHTML = data;
+        document.getElementById('consultoria-placeholder').innerHTML = data;
         
         if (typeof AOS !== 'undefined') {
           AOS.refreshHard();

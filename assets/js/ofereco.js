@@ -1,8 +1,8 @@
-function carregarPortfolio() {
-    fetch("assets/componentes/aplicacoes/aplicacoes.html")
+function carregarOfereco() {
+    fetch("assets/componentes/ofereco/ofereco.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("aplicacoes-placeholder").innerHTML = data;
+            document.getElementById("ofereco-placeholder").innerHTML = data;
 
             if (typeof AOS !== 'undefined') {
                 AOS.refresh();
@@ -21,9 +21,9 @@ function carregarPortfolio() {
                     });
 
                     // Seletor corrigido: era '.portfolio-filters li' (inexistente)
-                    document.querySelectorAll('.aplicacoes-filters li').forEach(function (filtro) {
+                    document.querySelectorAll('.ofereco-filters li').forEach(function (filtro) {
                         filtro.addEventListener('click', function () {
-                            document.querySelectorAll('.aplicacoes-filters li').forEach(f => f.classList.remove('filter-active'));
+                            document.querySelectorAll('.ofereco-filters li').forEach(f => f.classList.remove('filter-active'));
                             this.classList.add('filter-active');
                             iso.arrange({ filter: this.getAttribute('data-filter') });
                         });
@@ -49,7 +49,7 @@ function carregarPortfolio() {
                     const resizeObserver = new ResizeObserver(() => {
                         forcarRelayout();
                     });
-                    document.querySelectorAll('.aplicacoes-wrap').forEach(el => resizeObserver.observe(el));
+                    document.querySelectorAll('.ofereco-wrap').forEach(el => resizeObserver.observe(el));
                 }
 
                 // Recalcula perfeitamente com os textos e fontes finais

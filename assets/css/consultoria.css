@@ -10,7 +10,7 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.fundamentos .profile-card {
+.consultoria .profile-card {
   background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
   border-radius: 2rem;
   padding: 2.5rem;
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-.fundamentos .profile-card::before {
+.consultoria .profile-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,17 +32,17 @@
 }
 
 @media (max-width: 991px) {
-  .fundamentos .profile-card {
+  .consultoria .profile-card {
     margin-bottom: 3rem;
   }
 }
 
-.fundamentos .profile-header {
+.consultoria .profile-header {
   position: relative;
   margin-bottom: 2rem;
 }
 
-.fundamentos .profile-header .profile-image {
+.consultoria .profile-header .profile-image {
   width: 160px;
   height: 160px;
   margin: 0 auto 1.5rem;
@@ -52,13 +52,13 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.fundamentos .profile-header .profile-image img {
+.consultoria .profile-header .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.fundamentos .profile-header .profile-badge {
+.consultoria .profile-header .profile-badge {
   position: absolute;
   bottom: 20px;
   right: calc(50% - 65px);
@@ -72,31 +72,31 @@
   border: 3px solid var(--surface-color);
 }
 
-.fundamentos .profile-header .profile-badge i {
+.consultoria .profile-header .profile-badge i {
   color: var(--contrast-color);
   font-size: 14px;
 }
 
-.fundamentos .profile-content h3 {
+.consultoria .profile-content h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: var(--heading-color);
 }
 
-.fundamentos .profile-content .profession {
+.consultoria .profile-content .profession {
   color: var(--accent-color);
   font-weight: 500;
   margin-bottom: 2rem;
 }
 
-.fundamentos .contact-links {
+.consultoria .contact-links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.fundamentos .contact-links .contact-item {
+.consultoria .contact-links .contact-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -109,33 +109,33 @@
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.fundamentos .contact-links .contact-item:hover {
+.consultoria .contact-links .contact-item:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
   box-shadow: 0 5px 20px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
-.fundamentos .contact-links .contact-item i {
+.consultoria .contact-links .contact-item i {
   font-size: 1rem;
   width: 18px;
 }
 
-.fundamentos .fundamentos-content {
+.consultoria .consultoria-content {
   padding-left: 3rem;
 }
 
 @media (max-width: 991px) {
-  .fundamentos .fundamentos-content {
+  .consultoria .consultoria-content {
     padding-left: 0;
   }
 }
 
-.fundamentos .fundamentos-content .section-header {
+.consultoria .consultoria-content .section-header {
   margin-bottom: 2rem;
 }
 
-.fundamentos .fundamentos-content .section-header .badge-text {
+.consultoria .consultoria-content .section-header .badge-text {
   display: inline-block;
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
   color: var(--contrast-color);
@@ -147,7 +147,7 @@
   margin-bottom: 1.5rem;
 }
 
-.fundamentos .fundamentos-content .section-header h2 {
+.consultoria .consultoria-content .section-header h2 {
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.3;
@@ -155,27 +155,27 @@
 }
 
 @media (max-width: 768px) {
-  .fundamentos .fundamentos-content .section-header h2 {
+  .consultoria .consultoria-content .section-header h2 {
     font-size: 1.875rem;
   }
 }
 
-.fundamentos .fundamentos-content .description {
+.consultoria .consultoria-content .description {
   margin-bottom: 2.5rem;
 }
 
-.fundamentos .fundamentos-content .description p {
+.consultoria .consultoria-content .description p {
   font-size: 1.1rem;
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 1.5rem;
 }
 
-.fundamentos .fundamentos-content .description p:last-child {
+.consultoria .consultoria-content .description p:last-child {
   margin-bottom: 0;
 }
 
-.fundamentos .stats-grid {
+.consultoria .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -187,18 +187,18 @@
 }
 
 @media (max-width: 768px) {
-  .fundamentos .stats-grid {
+  .consultoria .stats-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
   }
 }
 
-.fundamentos .stats-grid .stat-item {
+.consultoria .stats-grid .stat-item {
   text-align: center;
 }
 
-.fundamentos .stats-grid .stat-item .stat-number {
+.consultoria .stats-grid .stat-item .stat-number {
   font-size: 2rem;
   font-weight: 700;
   color: var(--accent-color);
@@ -206,17 +206,17 @@
   margin-bottom: 0.5rem;
 }
 
-.fundamentos .stats-grid .stat-item .stat-label {
+.consultoria .stats-grid .stat-item .stat-label {
   font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   font-weight: 500;
 }
 
-.fundamentos .details-grid {
+.consultoria .details-grid {
   margin-bottom: 2.5rem;
 }
 
-.fundamentos .details-grid .detail-row {
+.consultoria .details-grid .detail-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -224,17 +224,17 @@
 }
 
 @media (max-width: 768px) {
-  .fundamentos .details-grid .detail-row {
+  .consultoria .details-grid .detail-row {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 }
 
-.fundamentos .details-grid .detail-row:last-child {
+.consultoria .details-grid .detail-row:last-child {
   margin-bottom: 0;
 }
 
-.fundamentos .details-grid .detail-item .detail-label {
+.consultoria .details-grid .detail-item .detail-label {
   display: block;
   font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
@@ -242,20 +242,20 @@
   font-weight: 500;
 }
 
-.fundamentos .details-grid .detail-item .detail-value {
+.consultoria .details-grid .detail-item .detail-value {
   display: block;
   font-weight: 600;
   color: var(--heading-color);
   font-size: 1rem;
 }
 
-.fundamentos .cta-section {
+.consultoria .cta-section {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.fundamentos .cta-section .btn {
+.consultoria .cta-section .btn {
   padding: 0.875rem 2rem;
   border-radius: 0.75rem;
   font-weight: 600;
@@ -267,24 +267,24 @@
   border: 2px solid transparent;
 }
 
-.fundamentos .cta-section .btn.btn-primary {
+.consultoria .cta-section .btn.btn-primary {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.fundamentos .cta-section .btn.btn-primary:hover {
+.consultoria .cta-section .btn.btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 15%);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
-.fundamentos .cta-section .btn.btn-outline {
+.consultoria .cta-section .btn.btn-outline {
   background-color: transparent;
   color: var(--default-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.fundamentos .cta-section .btn.btn-outline:hover {
+.consultoria .cta-section .btn.btn-outline:hover {
   border-color: var(--accent-color);
   transform: translateY(-2px);
 }
@@ -393,7 +393,7 @@
 }
 
 /* Container do Círculo da Imagem */
-  .fundamentos .profile-image {
+  .consultoria .profile-image {
     position: relative;
     overflow: hidden;
     border-radius: 50%; /* Garante que a varredura não vaze para fora do círculo */
@@ -407,7 +407,7 @@
   }
 
   /* FASE 2: A Linha de Risco (Scanner Vermelho) - Loop Infinito de 6s */
-  .fundamentos .profile-image::before {
+  .consultoria .profile-image::before {
     content: "";
     position: absolute;
     top: -10%;
@@ -429,7 +429,7 @@
   }
 
   /* FASE 3: A Mitigação (Escudo Verde Contínuo) - Sincronizado */
-  .fundamentos .profile-image::after {
+  .consultoria .profile-image::after {
     content: "";
     position: absolute;
     top: 0;
@@ -454,7 +454,7 @@
   }
 
   /* FASE 4: Brilho no Ícone de Verificação (Sincronizado) */
-  .fundamentos .profile-badge {
+  .consultoria .profile-badge {
     animation: brilhoCheck 6s ease-out infinite;
   }
 

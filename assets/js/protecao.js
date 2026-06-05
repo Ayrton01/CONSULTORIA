@@ -1,8 +1,8 @@
-function carregarResume() {
-    fetch("assets/componentes/etapas/etapas.html")
+function carregarProtecao() {
+    fetch("assets/componentes/protecao/protecao.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("etapas-placeholder").innerHTML = data;
+            document.getElementById("protecao-placeholder").innerHTML = data;
             if (typeof AOS !== 'undefined') {
                 AOS.refresh();
             }

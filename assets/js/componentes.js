@@ -1,9 +1,9 @@
 (function() {
     // Configuração dos scripts e suas respectivas funções de inicialização
     const scripts = [
-        { src: "assets/js/fundamentos.js", initFn: "carregarSobre" },
-        { src: "assets/js/etapas.js", initFn: "carregarResume" },
-        { src: "assets/js/aplicacoes.js", initFn: "carregarPortfolio" },
+        { src: "assets/js/consultoria.js", initFn: "carregarConsultoria" },
+        { src: "assets/js/protecao.js", initFn: "carregarProtecao" },
+        { src: "assets/js/ofereco.js", initFn: "carregarOfereco" },
         { src: "assets/js/contato.js", initFn: "carregarContato" }
     ];
 

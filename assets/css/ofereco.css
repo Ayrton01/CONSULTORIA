@@ -5,21 +5,21 @@
 /* ==========================================================================
    Correção do Traço do Título da Seção Portfolio (Traços Laterais)
    ========================================================================== */
-.aplicacoes .section-title {
+.ofereco .section-title {
   text-align: center;
   margin-bottom: 40px;
   width: 100%;
 }
 
-.aplicacoes .section-title h2 {
+.ofereco .section-title h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
 }
 
-.aplicacoes .section-title h2::before,
-.aplicacoes .section-title h2::after {
+.ofereco .section-title h2::before,
+.ofereco .section-title h2::after {
   content: "";
   display: inline-block;
   width: 70px; /* Tamanho do traço longo */
@@ -27,21 +27,21 @@
   background: var(--accent-color);
 }
 
-.aplicacoes .section-title h2::before {
+.ofereco .section-title h2::before {
   margin: 0 20px 0 0 !important;
 }
 
-.aplicacoes .section-title h2::after {
+.ofereco .section-title h2::after {
   margin: 0 0 0 20px !important;
 }
 
 @media (max-width: 991px) {
-  .aplicacoes .filter-sidebar {
+  .ofereco .filter-sidebar {
     margin-bottom: 30px;
   }
 }
 
-.aplicacoes .filters-wrapper {
+.ofereco .filters-wrapper {
   background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 3%);
   padding: 30px;
   border-radius: 10px;
@@ -49,12 +49,12 @@
 }
 
 @media (max-width: 991px) {
-  .aplicacoes .filters-wrapper {
+  .ofereco .filters-wrapper {
     padding: 20px;
   }
 }
 
-.aplicacoes .aplicacoes-filters {
+.ofereco .ofereco-filters {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -64,14 +64,14 @@
 }
 
 @media (max-width: 991px) {
-  .aplicacoes .aplicacoes-filters {
+  .ofereco .ofereco-filters {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-.aplicacoes .aplicacoes-filters li {
+.ofereco .ofereco-filters li {
   cursor: pointer;
   padding: 12px 20px;
   font-size: 16px;
@@ -86,32 +86,32 @@
 }
 
 @media (max-width: 991px) {
-  .aplicacoes .aplicacoes-filters li {
+  .ofereco .ofereco-filters li {
     padding: 8px 16px;
     border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
     border-left-width: 3px;
   }
 }
 
-.aplicacoes .aplicacoes-filters li:hover {
+.ofereco .ofereco-filters li:hover {
   color: var(--accent-color);
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   border-left-color: color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
-.aplicacoes .aplicacoes-filters li.filter-active {
+.ofereco .ofereco-filters li.filter-active {
   color: var(--accent-color);
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   border-left-color: var(--accent-color);
   font-weight: 600;
 }
 
-.aplicacoes .aplicacoes-item {
+.ofereco .ofereco-item {
   /* Garante o espaçamento vertical entre os cards no Isotope (substitui o gy-4) */
   padding-bottom: 30px;
 }
 
-.aplicacoes .aplicacoes-wrap {
+.ofereco .ofereco-wrap {
   transition: 0.4s;
   position: relative;
   overflow: hidden;
@@ -119,14 +119,14 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-.aplicacoes .aplicacoes-wrap img {
+.ofereco .ofereco-wrap img {
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 100%;
   height: 350px;
   object-fit: cover;
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info {
+.ofereco .ofereco-wrap .ofereco-info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -139,12 +139,12 @@
   opacity: 0;
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info .content {
+.ofereco .ofereco-wrap .ofereco-info .content {
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateY(20px);
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info .category {
+.ofereco .ofereco-wrap .ofereco-info .category {
   display: inline-block;
   color: var(--accent-color);
   font-size: 14px;
@@ -154,19 +154,19 @@
   margin-bottom: 8px;
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info h4 {
+.ofereco .ofereco-wrap .ofereco-info h4 {
   font-size: 20px;
   color: var(--contrast-color);
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info .aplicacoes-links {
+.ofereco .ofereco-wrap .ofereco-info .ofereco-links {
   display: flex;
   gap: 12px;
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info .aplicacoes-links a {
+.ofereco .ofereco-wrap .ofereco-info .ofereco-links a {
   color: var(--contrast-color);
   width: 40px;
   height: 40px;
@@ -179,31 +179,31 @@
   transition: 0.3s;
 }
 
-.aplicacoes .aplicacoes-wrap .aplicacoes-info .aplicacoes-links a:hover {
+.ofereco .ofereco-wrap .ofereco-info .ofereco-links a:hover {
   background-color: var(--accent-color);
   transform: translateY(-3px);
 }
 
-.aplicacoes .aplicacoes-wrap:hover {
+.ofereco .ofereco-wrap:hover {
   transform: translateY(-5px);
 }
 
-.aplicacoes .aplicacoes-wrap:hover img {
+.ofereco .ofereco-wrap:hover img {
   transform: scale(1.08);
 }
 
-.aplicacoes .aplicacoes-wrap:hover .aplicacoes-info {
+.ofereco .ofereco-wrap:hover .ofereco-info {
   transform: translateY(0);
   opacity: 1;
 }
 
-.aplicacoes .aplicacoes-wrap:hover .aplicacoes-info .content {
+.ofereco .ofereco-wrap:hover .ofereco-info .content {
   transform: translateY(0);
 }
 
 /* Estilos dos cards de serviço (migrados de inline para cá) */
 /* Caminho relativo à localização deste CSS: assets/css/ → ../img/ */
-.aplicacoes .aplicacoes-wrap.card-servico {
+.ofereco .ofereco-wrap.card-servico {
   background:
     linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.95)),
     url('../img/capaceteAmarelo.png') center / cover;
@@ -219,23 +219,23 @@
   justify-content: flex-start;
 }
 
-.aplicacoes .aplicacoes-wrap.card-servico .icon-box-aplicacoes {
+.ofereco .ofereco-wrap.card-servico .icon-box-ofereco {
   margin-bottom: 20px;
 }
 
-.aplicacoes .aplicacoes-wrap.card-servico .icon-box-aplicacoes i {
+.ofereco .ofereco-wrap.card-servico .icon-box-ofereco i {
   font-size: 2.5rem;
   color: var(--accent-color);
 }
 
-.aplicacoes .aplicacoes-wrap.card-servico h4 {
+.ofereco .ofereco-wrap.card-servico h4 {
   color: var(--heading-color);
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.aplicacoes .aplicacoes-wrap.card-servico p {
+.ofereco .ofereco-wrap.card-servico p {
   color: var(--default-color);
   font-size: 0.95rem;
   line-height: 1.6;
