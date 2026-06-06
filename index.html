@@ -26,6 +26,7 @@
   <meta property="og:description" content="Consultoria especializada.">
   <meta property="og:url" content="https://whenriques.com.br/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://whenriques.com.br/assets/img/capaceteAmarelo.png">
 
   <!-- Segurança -->
   <!-- Impede sniffing de MIME type pelo navegador -->
@@ -33,7 +34,7 @@
   <!-- CSP: restringe origens de scripts, estilos e fontes a fontes confiáveis.
        Substitui a necessidade de SRI no Google Fonts, pois o serviço gera hashes
        dinâmicos por user-agent, tornando atributos integrity estáticos inviáveis. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"> 
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"> 
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -54,6 +55,12 @@
 
   <!-- Main CSS File -->
   <link href="main.css" rel="stylesheet">
+
+  <!-- Componentes CSS -->
+  <link href="assets/css/consultoria.css" rel="stylesheet">
+  <link href="assets/css/protecao.css" rel="stylesheet">
+  <link href="assets/css/ofereco.css" rel="stylesheet">
+  <link href="assets/css/contato.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: SnapFolio
@@ -107,7 +114,7 @@
   <script src="main.js"></script>
 
   <!-- Gerenciador de Componentes Dinâmicos -->
-  <script src="assets/js/componentes.js"></script>
+  <script type="module" src="assets/js/componentes.js"></script>
 
 </body>
 

@@ -67,13 +67,15 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
@@ -155,7 +157,10 @@
   const headerElement = document.querySelector('#menu');
   if (headerElement && !headerElement.innerHTML.trim()) {
     fetch('assets/componentes/inicio/menu.html')
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP erro! status: ${response.status}`);
+        return response.text();
+      })
       .then(data => {
         headerElement.innerHTML = data;
         initNavigation();
@@ -173,7 +178,10 @@
   const inicioElement = document.querySelector('#inicio-placeholder');
   if (inicioElement && !inicioElement.innerHTML.trim()) {
     fetch('assets/componentes/inicio/inicio.html')
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP erro! status: ${response.status}`);
+        return response.text();
+      })
       .then(data => {
         inicioElement.innerHTML = data;
         initTyped();

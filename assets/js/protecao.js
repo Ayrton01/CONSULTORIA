@@ -1,6 +1,9 @@
-function carregarProtecao() {
+export function carregarProtecao() {
     fetch("assets/componentes/protecao/protecao.html")
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP erro! status: ${response.status}`);
+            return response.text();
+        })
         .then(data => {
             document.getElementById("protecao-placeholder").innerHTML = data;
             if (typeof AOS !== 'undefined') {

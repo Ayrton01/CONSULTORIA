@@ -206,7 +206,13 @@
 .ofereco .ofereco-wrap.card-servico {
   background:
     linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.95)),
-    url('../img/capaceteAmarelo.png') center / cover;
+    url('../img/capaceteAmarelo.png') center / cover; /* Fallback PNG Seguro */
+  background:
+    linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.95)),
+    -webkit-image-set(url('../img/capaceteAmarelo.webp') 1x, url('../img/capaceteAmarelo.png') 1x) center / cover;
+  background:
+    linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.95)),
+    image-set(url('../img/capaceteAmarelo.webp') type("image/webp"), url('../img/capaceteAmarelo.png') type("image/png")) center / cover;
   padding: 40px 30px;
   border-radius: 8px;
   border-bottom: 3px solid var(--accent-color);

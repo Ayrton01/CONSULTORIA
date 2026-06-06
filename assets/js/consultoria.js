@@ -1,6 +1,9 @@
-function carregarConsultoria() {
+export function carregarConsultoria() {
     fetch('assets/componentes/consultoria/consultoria.html')
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP erro! status: ${response.status}`);
+        return response.text();
+      })
       .then(data => {
         document.getElementById('consultoria-placeholder').innerHTML = data;
         

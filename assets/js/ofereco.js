@@ -1,6 +1,9 @@
-function carregarOfereco() {
+export function carregarOfereco() {
     fetch("assets/componentes/ofereco/ofereco.html")
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP erro! status: ${response.status}`);
+            return response.text();
+        })
         .then(data => {
             document.getElementById("ofereco-placeholder").innerHTML = data;
 
